@@ -47,11 +47,6 @@
             50% { filter: drop-shadow(0 0 25px var(--red-glow)); transform: scale(1.05); }
             100% { filter: drop-shadow(0 0 10px var(--red)); transform: scale(1); }
         }
-        @keyframes glowText {
-            0% { text-shadow: 0 0 5px var(--gold-dim); }
-            50% { text-shadow: 0 0 20px var(--gold-light); }
-            100% { text-shadow: 0 0 5px var(--gold-dim); }
-        }
 
         /* --- LAYOUT --- */
         .container {
@@ -76,6 +71,9 @@
             margin: 0 auto 20px;
             position: relative;
             animation: lionPulse 3s infinite ease-in-out;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
         .logo-img {
             width: 100%;
@@ -85,6 +83,7 @@
             border: 3px solid var(--gold);
             background: var(--dark2);
             box-shadow: 0 0 20px var(--red-glow);
+            display: block;
         }
         h1 {
             font-family: 'Playfair Display', serif;
@@ -112,7 +111,7 @@
         }
         .highlight { color: var(--gold-light); font-weight: bold; }
 
-        /* --- SHARED SECTION STYLES (Glass Effect) --- */
+        /* --- SHARED SECTION STYLES --- */
         .content-section {
             background: var(--glass);
             backdrop-filter: blur(10px);
@@ -127,7 +126,6 @@
             overflow: hidden;
         }
         
-        /* Wet Vibe Border Gradient */
         .content-section::before {
             content: '';
             position: absolute;
@@ -315,7 +313,8 @@
         <!-- HEADER -->
         <header class="profile-header">
             <div class="logo-container">
-                <img src="FAE9F009-C138-40CF-8FCB-43A64A22F5CE.jpeg" alt="SARDONYXX Red Lion Logo" class="logo-img">
+                <!-- UPDATED: Now points to your actual Lion file -->
+                <img src="9E5160A8-0AD2-4246-B7CB-925E6CBDAF8C.png" alt="SARDONYXX Red Lion Logo" class="logo-img">
             </div>
             <h1>SARDONYXX™</h1>
             <div class="subtitle">ONYXX Foundation Group, LLC</div>
@@ -328,7 +327,7 @@
             One Web. One App. Instant Connection."
         </div>
 
-        <!-- THE ORIGIN STORY (NEW SECTION) -->
+        <!-- THE ORIGIN STORY -->
         <section class="content-section">
             <h2 class="section-title">The Origin</h2>
             <p class="story-text">
