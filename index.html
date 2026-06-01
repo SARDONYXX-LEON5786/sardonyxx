@@ -37,7 +37,6 @@
             min-height: 100vh;
         }
 
-        /* --- ANIMATIONS --- */
         @keyframes fadeUp {
             from { opacity: 0; transform: translateY(30px); }
             to { opacity: 1; transform: translateY(0); }
@@ -48,7 +47,6 @@
             100% { filter: drop-shadow(0 0 10px var(--red)); transform: scale(1); }
         }
 
-        /* --- LAYOUT --- */
         .container {
             max-width: 800px;
             margin: 0 auto;
@@ -61,10 +59,7 @@
             justify-content: center;
         }
 
-        /* --- HEADER --- */
-        .profile-header {
-            margin-bottom: 40px;
-        }
+        .profile-header { margin-bottom: 40px; }
         .logo-container {
             width: 160px;
             height: 160px;
@@ -102,7 +97,6 @@
             margin-bottom: 25px;
         }
 
-        /* --- CORE MESSAGE --- */
         .core-message {
             font-size: 1.2rem;
             margin-bottom: 40px;
@@ -111,7 +105,6 @@
         }
         .highlight { color: var(--gold-light); font-weight: bold; }
 
-        /* --- SHARED SECTION STYLES --- */
         .content-section {
             background: var(--glass);
             backdrop-filter: blur(10px);
@@ -160,7 +153,6 @@
             font-weight: bold;
         }
 
-        /* --- STATS GRID --- */
         .stats-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
@@ -194,7 +186,6 @@
             text-transform: uppercase;
         }
 
-        /* --- QUOTE BLOCK --- */
         .quote-block {
             border-left: 3px solid var(--red);
             padding-left: 20px;
@@ -204,7 +195,6 @@
             font-size: 1.2rem;
         }
 
-        /* --- IMAGES --- */
         .image-container {
             width: 100%;
             margin: 20px 0;
@@ -228,7 +218,6 @@
             font-style: italic;
         }
 
-        /* --- NOTES --- */
         .journal-note {
             font-family: 'Space Mono', monospace;
             color: var(--gold-light);
@@ -257,7 +246,6 @@
             width: 100%;
         }
 
-        /* --- ACTION BUTTON --- */
         .action-container {
             margin-top: 40px;
             margin-bottom: 40px;
@@ -286,7 +274,6 @@
             box-shadow: 0 8px 25px var(--gold-glow);
         }
 
-        /* --- FOOTER --- */
         footer {
             margin-top: auto;
             padding: 30px 20px;
@@ -297,7 +284,6 @@
             background: var(--dark2);
         }
 
-        /* --- MOBILE --- */
         @media (max-width: 600px) {
             h1 { font-size: 2.2rem; }
             .logo-container { width: 140px; height: 140px; }
@@ -310,24 +296,21 @@
 <body>
 
     <div class="container">
-        <!-- HEADER -->
         <header class="profile-header">
             <div class="logo-container">
-                <!-- UPDATED: Now points to your actual Lion file -->
-                <img src="9E5160A8-0AD2-4246-B7CB-925E6CBDAF8C.png" alt="SARDONYXX Red Lion Logo" class="logo-img">
+                <!-- FIXED: Matches your uploaded filename exactly -->
+                <img src="9E5160A8-0AD2-4246-B7CB-925E6CBDAF8C (5).png" alt="SARDONYXX Red Lion Logo" class="logo-img">
             </div>
             <h1>SARDONYXX™</h1>
             <div class="subtitle">ONYXX Foundation Group, LLC</div>
         </header>
 
-        <!-- CORE MESSAGE -->
         <div class="core-message">
             "Ancient Truth. Street Aesthetics. Fluid Numbers.<br>
             <span class="highlight">AMGO™</span> merges the Renaissance with the Future.<br>
             One Web. One App. Instant Connection."
         </div>
 
-        <!-- THE ORIGIN STORY -->
         <section class="content-section">
             <h2 class="section-title">The Origin</h2>
             <p class="story-text">
@@ -349,7 +332,6 @@
                 The little boy believed it. He never forgot it. He carried that moment for thirty years — until he built something with it.
             </p>
 
-            <!-- STATS GRID -->
             <div class="stats-grid">
                 <div class="stat-card">
                     <span class="stat-number">$11,111</span>
@@ -394,7 +376,6 @@
             </p>
         </section>
 
-        <!-- BACKSTAGE: BUSINESS PORTFOLIO JOURNAL -->
         <section class="content-section">
             <h2 class="section-title">The Designer's Journal</h2>
             <div class="journal-note">BEHIND THE SCENES: CALCULATING THE SEASON</div>
@@ -407,7 +388,6 @@
             </div>
         </section>
 
-        <!-- RUNWAY: SOCIAL MEDIA PORTFOLIO -->
         <section class="content-section">
             <h2 class="section-title">The Live Portfolio</h2>
             <div class="social-note">NO FAKE. JUST CONNECTED REALITY.</div>
@@ -420,12 +400,10 @@
             </div>
         </section>
 
-        <!-- SINGLE ACTION -->
         <div class="action-container">
             <a href="https://sardonyxx.tech" target="_blank" class="btn-main">LAUNCH SARDONYXX NOW</a>
         </div>
 
-        <!-- FOOTER -->
         <footer>
             <p>&copy; 2026 ONYXX Foundation Group, LLC. All Rights Reserved.</p>
             <p>SARDONYXX: Judah • Ephraim • Joseph</p>
